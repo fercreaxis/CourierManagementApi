@@ -2,7 +2,7 @@
 using System.Data;
 using Microsoft.AspNetCore.Mvc;
 
-namespace ApproveX_API.Controllers.BaseController
+namespace CourierManagementAPI.Controllers.BaseController
 {
     public class BaseController : Controller
     {

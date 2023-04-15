@@ -1,13 +1,10 @@
-﻿using System;
-using System.IO;
-using ApproveX_API.Models.Users;
-using ApproveX_API.Services.Users;
-using ApproveX_API.Services.UserSessions;
-using Microsoft.AspNetCore.Mvc;
+﻿using CourierManagementAPI.Models.Users;
+using CourierManagementAPI.Services.Users;
+using CourierManagementAPI.Services.UserSessions;
 using Microsoft.AspNetCore.Mvc.Filters;
 using Newtonsoft.Json;
 
-namespace ApproveX_API.Controllers.ActionFilters
+namespace CourierManagementAPI.Controllers.ActionFilters
 {
     public class LogActivityFilter : IActionFilter
     {
@@ -40,7 +37,7 @@ namespace ApproveX_API.Controllers.ActionFilters
                 {
                     userId = userId,
                     url = Context.HttpContext.Request.Path.Value,
-                    ipAddress = Context.HttpContext.Connection.RemoteIpAddress.ToString(),
+                    ipAddress = Context.HttpContext.Connection.RemoteIpAddress?.ToString(),
                     action = @$"Method: {Context.HttpContext.Request.Method} - Path: {Context.HttpContext.Request.Path.Value} - Response Code: {Context.HttpContext.Response.StatusCode.ToString()} ",
                     parameters = param
 

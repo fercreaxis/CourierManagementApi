@@ -1,7 +1,7 @@
 ﻿using System;
 using System.ComponentModel.DataAnnotations;
 
-namespace ApproveX_API.Models.Shared
+namespace CourierManagementAPI.Models.Shared
 {
     public class JsonResult
     {

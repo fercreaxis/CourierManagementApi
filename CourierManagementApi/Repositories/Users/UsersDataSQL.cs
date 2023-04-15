@@ -2,22 +2,22 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Security.Cryptography;
-using ApproveX_API.Models.Users;
-using ApproveX_API.Repositories.DB;
+using CourierManagementAPI.Models.Users;
+using CourierManagementAPI.Repositories.DB;
 using Microsoft.AspNetCore.Cryptography.KeyDerivation;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Data.SqlClient;
 
 
-namespace ApproveX_API.Repositories.Users
+namespace CourierManagementAPI.Repositories.Users
 {
     public class UsersDataSql : IUsersData
     {
-        private readonly ApproveXContext _aux;
+        private readonly CourierManagementContext _aux;
         private readonly IConfiguration _config;
 
-        public UsersDataSql(ApproveXContext ParamContext, IConfiguration Param)
+        public UsersDataSql(CourierManagementContext ParamContext, IConfiguration Param)
         {
             _aux = ParamContext;
             _config = Param;

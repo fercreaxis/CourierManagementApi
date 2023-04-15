@@ -1,5 +1,6 @@
-﻿using ApproveX_API.Repositories.UserSessions;
-namespace ApproveX_API.Services.UserSessions
+﻿using CourierManagementAPI.Repositories.UserSessions;
+
+namespace CourierManagementAPI.Services.UserSessions
 {
     public class ValidateSessionService : IValidateSessionService
     {

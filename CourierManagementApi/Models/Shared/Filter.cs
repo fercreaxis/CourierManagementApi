@@ -1,4 +1,4 @@
-﻿namespace ApproveX_API.Models.Shared
+﻿namespace CourierManagementAPI.Models.Shared
 {
     public class Filter
     {

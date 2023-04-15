@@ -2,7 +2,7 @@
 using System.Net;
 using System.Net.Mail;
 
-namespace ApproveX_API.Models.Shared
+namespace CourierManagementAPI.Models.Shared
 {
     public class Helper
     {

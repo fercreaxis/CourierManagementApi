@@ -1,4 +1,4 @@
-﻿namespace ApproveX_API.Repositories.UserSessions
+﻿namespace CourierManagementAPI.Repositories.UserSessions
 {
     public interface IValidateSessionData
     {

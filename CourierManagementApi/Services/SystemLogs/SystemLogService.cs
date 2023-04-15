@@ -1,4 +1,4 @@
-﻿namespace ApproveX_API.Services.SystemLogs
+﻿namespace CourierManagementAPI.Services.SystemLogs
 {
     public class SystemLogService : ISystemLogService
     {

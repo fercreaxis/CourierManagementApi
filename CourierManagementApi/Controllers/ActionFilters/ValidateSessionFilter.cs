@@ -1,14 +1,14 @@
 ﻿using System;
 using System.IO;
 using System.Linq;
-using ApproveX_API.Models.Users;
-using ApproveX_API.Services.Users;
-using ApproveX_API.Services.UserSessions;
+using CourierManagementAPI.Models.Users;
+using CourierManagementAPI.Services.Users;
+using CourierManagementAPI.Services.UserSessions;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Filters;
 using Newtonsoft.Json;
 
-namespace ApproveX_API.Controllers.ActionFilters
+namespace CourierManagementAPI.Controllers.ActionFilters
 
 {
     public class ValidateSessionFilter : IActionFilter

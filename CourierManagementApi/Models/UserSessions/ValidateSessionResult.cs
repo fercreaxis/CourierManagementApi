@@ -1,7 +1,7 @@
 ﻿using System;
 using System.ComponentModel.DataAnnotations;
 
-namespace ApproveX_API.Models.UserSessions
+namespace CourierManagementAPI.Models.UserSessions
 {
     public class ValidateSessionResult
     {

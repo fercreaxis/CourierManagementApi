@@ -1,11 +1,11 @@
 ﻿using System;
-using ApproveX_API.Controllers.ActionFilters;
-using ApproveX_API.Models.Shared;
-using ApproveX_API.Models.Users;
-using ApproveX_API.Services.Users;
+using CourierManagementAPI.Models.Shared;
+using CourierManagementAPI.Controllers.ActionFilters;
+using CourierManagementAPI.Models.Users;
+using CourierManagementAPI.Services.Users;
 using Microsoft.AspNetCore.Mvc;
 
-namespace ApproveX_API.Controllers.Users
+namespace CourierManagementAPI.Controllers.Users
 {
 
     [Route("api/[controller]/[action]/{id?}")]

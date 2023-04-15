@@ -1,16 +1,16 @@
 ﻿using System;
 using System.Linq;
-using ApproveX_API.Repositories.DB;
+using CourierManagementAPI.Repositories.DB;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Data.SqlClient;
 
-namespace ApproveX_API.Repositories.UserSessions
+namespace CourierManagementAPI.Repositories.UserSessions
 {
     public class ValidateSessionSql : IValidateSessionData
     {
-        private ApproveXContext _aux;
+        private CourierManagementContext _aux;
 
-        public ValidateSessionSql(ApproveXContext ParamContext)
+        public ValidateSessionSql(CourierManagementContext ParamContext)
         {
             _aux = ParamContext;
         }

@@ -1,20 +1,16 @@
-using ApproveX_API.Controllers.ActionFilters;
-using ApproveX_API.Repositories.DB;
-using ApproveX_API.Repositories.Devices;
-using ApproveX_API.Repositories.Notifications;
-using ApproveX_API.Repositories.Users;
-using ApproveX_API.Repositories.UserSessions;
-using ApproveX_API.Services.Devices;
-using ApproveX_API.Services.Notifications;
-using ApproveX_API.Services.Users;
-using ApproveX_API.Services.UserSessions;
+using CourierManagementAPI.Controllers.ActionFilters;
+using CourierManagementAPI.Repositories.DB;
+using CourierManagementAPI.Repositories.Users;
+using CourierManagementAPI.Repositories.UserSessions;
+using CourierManagementAPI.Services.Users;
+using CourierManagementAPI.Services.UserSessions;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
 
 
-string MyAllowSpecificOrigins = "_myAllowSpecificOrigins";
+const string MyAllowSpecificOrigins = "_myAllowSpecificOrigins";
 builder.Services.AddCors(options =>
 {
     options.AddPolicy(name: MyAllowSpecificOrigins,
@@ -23,19 +19,14 @@ builder.Services.AddCors(options =>
             builder.AllowAnyOrigin().AllowAnyHeader().AllowAnyMethod();
         });
 });
-builder.Services.AddDbContextPool<ApproveXContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("DBConnectionString")));
+builder.Services.AddDbContextPool<CourierManagementContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("DBConnectionString")));
 
 
 builder.Services.AddScoped<IUsersService, UserService>();
 builder.Services.AddScoped<IValidateSessionService, ValidateSessionService>();
-builder.Services.AddScoped<INotificationService, NotificationService>();
-builder.Services.AddScoped<IDeviceService, DeviceService>();
-
 
 builder.Services.AddScoped<IUsersData, UsersDataSql>();
 builder.Services.AddScoped<IValidateSessionData, ValidateSessionSql>();
-builder.Services.AddScoped<INotificationData, NotificationDataSQL>();
-builder.Services.AddScoped<IDeviceData, DeviceDataSql>();
 
 builder.Services.AddScoped<ValidateSessionFilter>();
 

@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
-using ApproveX_API.Models.Users;
+using CourierManagementAPI.Models.Users;
 
-namespace ApproveX_API.Services.Users
+namespace CourierManagementAPI.Services.Users
 
 {
     public interface IUsersService

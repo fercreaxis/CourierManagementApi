@@ -1,4 +1,4 @@
-﻿namespace ApproveX_API.Services.UserSessions
+﻿namespace CourierManagementAPI.Services.UserSessions
 {
     public interface IValidateSessionService
     {

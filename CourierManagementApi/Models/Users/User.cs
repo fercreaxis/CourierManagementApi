@@ -1,7 +1,7 @@
 ﻿using System;
 using System.ComponentModel.DataAnnotations;
 
-namespace ApproveX_API.Models.Users
+namespace CourierManagementAPI.Models.Users
 {
     public class User
     {

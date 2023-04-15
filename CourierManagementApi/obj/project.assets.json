@@ -3146,24 +3146,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\frodriguez\\.nuget\\packages\\": {},
-    "C:\\Program Files\\DevExpress 22.2\\Components\\Offline Packages": {}
+    "C:\\Users\\fgattino\\.nuget\\packages\\": {},
+    "C:\\Program Files\\DevExpress 22.1\\Components\\Offline Packages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Creaxis\\Source\\Api\\CourierManagementApi\\CourierManagementApi\\CourierManagementApi.csproj",
+      "projectUniqueName": "C:\\Github\\CourierManagementApi\\CourierManagementApi\\CourierManagementApi.csproj",
       "projectName": "CourierManagementApi",
-      "projectPath": "C:\\Creaxis\\Source\\Api\\CourierManagementApi\\CourierManagementApi\\CourierManagementApi.csproj",
-      "packagesPath": "C:\\Users\\frodriguez\\.nuget\\packages\\",
-      "outputPath": "C:\\Creaxis\\Source\\Api\\CourierManagementApi\\CourierManagementApi\\obj\\",
+      "projectPath": "C:\\Github\\CourierManagementApi\\CourierManagementApi\\CourierManagementApi.csproj",
+      "packagesPath": "C:\\Users\\fgattino\\.nuget\\packages\\",
+      "outputPath": "C:\\Github\\CourierManagementApi\\CourierManagementApi\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files\\DevExpress 22.2\\Components\\Offline Packages"
+        "C:\\Program Files\\DevExpress 22.1\\Components\\Offline Packages"
       ],
       "configFilePaths": [
-        "C:\\Users\\frodriguez\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 22.2.config",
+        "C:\\Users\\fgattino\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 22.1.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -3171,10 +3171,8 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\DevExpress 22.2\\Components\\System\\Components\\Packages": {},
-        "https://api.nuget.org/v3/index.json": {},
-        "https://nuget.devexpress.com/HerydOpjoEviBUZYQ2Y5kyuBhiOJA67qE1M93vqolefGMg1tgs/api": {},
-        "https://nuget.pkg.github.com/kehe/index.json": {}
+        "C:\\Program Files\\DevExpress 22.1\\Components\\System\\Components\\Packages": {},
+        "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net6.0": {
@@ -3240,7 +3238,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
       }
     }
   }

@@ -1,9 +1,9 @@
 ﻿using System.Collections.Generic;
-using ApproveX_API.Models.Users;
-using ApproveX_API.Repositories.Users;
+using CourierManagementAPI.Models.Users;
+using CourierManagementAPI.Repositories.Users;
 
 
-namespace ApproveX_API.Services.Users
+namespace CourierManagementAPI.Services.Users
 {
 
     public class UserService : IUsersService

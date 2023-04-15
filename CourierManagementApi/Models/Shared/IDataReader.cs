@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Data;
 
-namespace ApproveX_API.Models.Shared
+namespace CourierManagementAPI.Models.Shared
 {
     static class DataReaderExtensions
     {
