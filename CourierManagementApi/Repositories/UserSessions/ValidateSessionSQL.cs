@@ -27,7 +27,7 @@ namespace CourierManagementAPI.Repositories.UserSessions
 
                 };
 
-                var result = _aux.ValidateSessionResults.FromSqlRaw(query, parameters).ToList().FirstOrDefault()!.code;
+                var result = _aux.validateSessionResults.FromSqlRaw(query, parameters).ToList().FirstOrDefault()!.code;
                 return result;
 
             }

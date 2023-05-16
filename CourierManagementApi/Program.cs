@@ -1,9 +1,19 @@
 using CourierManagementAPI.Controllers.ActionFilters;
+using CourierManagementAPI.Repositories.Brands;
+using CourierManagementAPI.Repositories.Collectors;
 using CourierManagementAPI.Repositories.DB;
+using CourierManagementAPI.Repositories.PackageTypes;
+using CourierManagementAPI.Repositories.UrgencyTypes;
 using CourierManagementAPI.Repositories.Users;
 using CourierManagementAPI.Repositories.UserSessions;
+using CourierManagementAPI.Repositories.Vendors;
+using CourierManagementAPI.Services.Brands;
+using CourierManagementAPI.Services.Collectors;
+using CourierManagementAPI.Services.PackageTypes;
+using CourierManagementAPI.Services.UrgencyTypes;
 using CourierManagementAPI.Services.Users;
 using CourierManagementAPI.Services.UserSessions;
+using CourierManagementAPI.Services.Vendors;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -27,6 +37,21 @@ builder.Services.AddScoped<IValidateSessionService, ValidateSessionService>();
 
 builder.Services.AddScoped<IUsersData, UsersDataSql>();
 builder.Services.AddScoped<IValidateSessionData, ValidateSessionSql>();
+
+builder.Services.AddScoped<IBrandsData, BrandsDataSQL>();
+builder.Services.AddScoped<IBrandsService, BrandsService>();
+
+builder.Services.AddScoped<ICollectorsData, CollectorDataSql>();
+builder.Services.AddScoped<ICollectorsService, CollectorsService>();
+
+builder.Services.AddScoped<IPackageTypesData, PackageTypeDataSql>();
+builder.Services.AddScoped<IPackageTypesService, PackageTypesService>();
+
+builder.Services.AddScoped<IUrgencyTypesData, UrgencyTypeDataSql>();
+builder.Services.AddScoped<IUrgencyTypesService, UrgencyTypesService>();
+
+builder.Services.AddScoped<IVendorsData, VendorDataSql>();
+builder.Services.AddScoped<IVendorsService, VendorsService>();
 
 builder.Services.AddScoped<ValidateSessionFilter>();
 

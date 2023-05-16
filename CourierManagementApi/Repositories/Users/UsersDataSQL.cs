@@ -30,7 +30,7 @@ namespace CourierManagementAPI.Repositories.Users
                 object[] parameters = { new SqlParameter(parameterName: "@username", value: Username) };
 
 
-                var result = _aux.Users.FromSqlRaw(query, parameters).ToList().FirstOrDefault();
+                var result = _aux.users.FromSqlRaw(query, parameters).ToList().FirstOrDefault();
 
                 return result;
             }
@@ -47,7 +47,7 @@ namespace CourierManagementAPI.Repositories.Users
                 object[] parameters = { new SqlParameter(parameterName: "@userId", value: UserId) };
 
 
-                var result = _aux.Users.FromSqlRaw(query, parameters).ToList().FirstOrDefault();
+                var result = _aux.users.FromSqlRaw(query, parameters).ToList().FirstOrDefault();
 
                 return result;
             }
@@ -61,7 +61,7 @@ namespace CourierManagementAPI.Repositories.Users
             try
             {
                 var query = "execute sp_SYS_GetUsers ";
-                var result = _aux.Users.FromSqlRaw(query).ToList();
+                var result = _aux.users.FromSqlRaw(query).ToList();
 
                 return result;
             }
@@ -76,7 +76,7 @@ namespace CourierManagementAPI.Repositories.Users
             try
             {
                 var query = "execute SP_SYS_RoleEntities_GetList ";
-                var result = _aux.RoleEntities.FromSqlRaw(query).ToList();
+                var result = _aux.roleEntities.FromSqlRaw(query).ToList();
 
                 return result;
             }
@@ -282,7 +282,7 @@ namespace CourierManagementAPI.Repositories.Users
             try
             {
                 var query = "execute  sp_SYS_GetUserRoles";
-                var result = _aux.UserRoles.FromSqlRaw(query).ToList();
+                var result = _aux.userRoles.FromSqlRaw(query).ToList();
 
                 return result;
             }
